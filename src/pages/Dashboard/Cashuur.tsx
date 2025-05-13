@@ -1,6 +1,6 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ReceiptTable from "./tables/ReceiptTable";
 import { Button } from "../../components/ui/button";
@@ -8,19 +8,19 @@ import { Button } from "../../components/ui/button";
 // import { getArdiyad } from "@/lib/actions/ardiyad.action";
 import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-interface ReceiptData {
-  id: number;
-  place: string;
-  telephone: string;
-  receiptNumber: string;
-  date: string;
-  cabbirka: string;
-  dhisan: string;
-  taxRef: string;
-  receivedFrom: string;
-  totalAmount: number;
-  amountInWords: string;
-}
+// interface ReceiptData {
+//   id: number;
+//   place: string;
+//   telephone: string;
+//   receiptNumber: string;
+//   date: string;
+//   cabbirka: string;
+//   dhisan: string;
+//   taxRef: string;
+//   receivedFrom: string;
+//   totalAmount: number;
+//   amountInWords: string;
+// }
 const ReceiptComponent = () => {
   // const [data, setData] = useState<ReceiptData[]>([]);
   const fetchData = async () => {
