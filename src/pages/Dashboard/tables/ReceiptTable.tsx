@@ -1,17 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Table,
-  // TableBody,
-  // TableCell,
+  TableBody,
+  TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "../../../components/ui/table";
-// interface ReceiptTableProps {
-//   data: any[]; // Replace 'any' with the actual type of your data
-// }
+interface ReceiptTableProps {
+  data: any[]; // Replace 'any' with the actual type of your data
+}
 
-const ReceiptTable = () => {
+const ReceiptTable = ({ data }: ReceiptTableProps) => {
   const Heads = {
     id: "ID",
     place: "Place",
@@ -35,7 +35,7 @@ const ReceiptTable = () => {
           ))}
         </TableRow>
       </TableHeader>
-      {/* <TableBody className="bg-white dark:bg-gray-800">
+      <TableBody className="bg-white dark:bg-gray-800">
         {data.map((item, index) => (
           <TableRow key={index}>
             <TableCell>
@@ -43,18 +43,18 @@ const ReceiptTable = () => {
             </TableCell>
             <TableCell>{item.place}</TableCell>
             <TableCell>{item.telephone}</TableCell>
-            <TableCell>{item.receipt_code}</TableCell>
-            <TableCell>{item.receipt_number}</TableCell>
+            <TableCell>{item.receiptCode}</TableCell>
+            <TableCell>{item.receiptNumber}</TableCell>
             <TableCell>{item.date}</TableCell>
             <TableCell>{item.cabbirka}</TableCell>
             <TableCell>{item.dhisan}</TableCell>
-            <TableCell>{item.tax_ref}</TableCell>
-            <TableCell>{item.received_from}</TableCell>
-            <TableCell>{item.total_amount}</TableCell>
-            <TableCell>{item.amount_in_words}</TableCell>
+            <TableCell>{item.taxRef}</TableCell>
+            <TableCell>{item.receivedFrom}</TableCell>
+            <TableCell>{item.totalAmount}</TableCell>
+            <TableCell>{item.amountInWords}</TableCell>
           </TableRow>
         ))}
-      </TableBody> */}
+      </TableBody>
     </Table>
   );
 };
