@@ -26,6 +26,7 @@ const LoginForm = () => {
   });
   const onSubmit = async (data: z.infer<typeof loginSchema>) => {
     setLoading(true);
+    console.log("data", data);
     try {
       // const resp: any = await loginUser(data.email, data.password);
       // if (resp) {

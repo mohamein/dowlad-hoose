@@ -1,24 +1,12 @@
 import { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
-import { useSelector, useDispatch } from "react-redux";
-// import { links } from '../components/ui/Yumm';
-// import { useStateContext } from '../components/ui/ContextProvider';
-// import { AppDispatch, RootState } from '@/Redux/Store';
-// import { getOneCompanayFN } from '@/Redux/Slice/GetOneCompanaySlice';
 import { links } from "./components/ui/Yumm";
 import { useStateContext } from "./components/ui/ContextProvider";
 
 const DhashSide = () => {
   const { currentColor, activeMenu, setActiveMenu, screenSize } =
     useStateContext();
-  //   const dispatch = useDispatch<AppDispatch>();
-  //   const GetOneCompanayState = useSelector((state: RootState) => state.GetOneCompanay);
-
-  //   useEffect(() => {
-  //     dispatch(getOneCompanayFN());
-  //   }, [dispatch]);
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");

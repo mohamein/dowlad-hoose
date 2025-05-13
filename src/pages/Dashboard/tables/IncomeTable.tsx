@@ -1,5 +1,3 @@
-import React from "react";
-
 const IncomeTable = () => {
   return <div>IncomeTable</div>;
 };

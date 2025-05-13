@@ -7,11 +7,11 @@ import {
   TableHeader,
   TableRow,
 } from "../../../components/ui/table";
-interface ReceiptTableProps {
-  data: any[]; // Replace 'any' with the actual type of your data
-}
+// interface ReceiptTableProps {
+//   data: any[]; // Replace 'any' with the actual type of your data
+// }
 
-const ReceiptTable = ({ data }: ReceiptTableProps) => {
+const ReceiptTable = () => {
   const Heads = {
     id: "ID",
     place: "Place",
@@ -35,7 +35,7 @@ const ReceiptTable = ({ data }: ReceiptTableProps) => {
           ))}
         </TableRow>
       </TableHeader>
-      <TableBody className="bg-white dark:bg-gray-800">
+      {/* <TableBody className="bg-white dark:bg-gray-800">
         {data.map((item, index) => (
           <TableRow key={index}>
             <TableCell>
@@ -54,7 +54,7 @@ const ReceiptTable = ({ data }: ReceiptTableProps) => {
             <TableCell>{item.amount_in_words}</TableCell>
           </TableRow>
         ))}
-      </TableBody>
+      </TableBody> */}
     </Table>
   );
 };

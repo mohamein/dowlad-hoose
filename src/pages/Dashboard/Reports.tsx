@@ -1,67 +1,65 @@
 // import Nav from '@/components/Nav';
 // import SideParsm from '@/components/SideParsm';
 // import LineReport1 from '@/components/ui/LineReports';
-import  { useState, useEffect } from 'react';
-import { FaBitcoin } from 'react-icons/fa';
+// import  { useState, useEffect } from 'react';
+import { FaBitcoin } from "react-icons/fa";
 import { HiArrowTrendingUp } from "react-icons/hi2";
-import { RiMoneyCnyBoxFill, RiMoneyEuroCircleFill } from 'react-icons/ri';
-import { motion } from 'framer-motion';
+import { RiMoneyCnyBoxFill, RiMoneyEuroCircleFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 // import MyChart from '@/components/ui/RebortChartsAre';
 // import Lottie from 'lottie-react';
 // import Mastercard from '../../public/mastercard.json';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import { useSelector, useDispatch } from 'react-redux';
-import Nav from './components/Nav';
-import LineReport1 from './components/ui/LineReport1';
-import MyChart from './components/myChart';
-import SideParsm from './components/SideParm';
+// import { useSelector, useDispatch } from 'react-redux';
+import Nav from "./components/Nav";
+import LineReport1 from "./components/ui/LineReport1";
+import MyChart from "./components/myChart";
+import SideParsm from "./components/SideParm";
 
 function Reports() {
-
-//   const dispatch = useDispatch<AppDispatch>();
-//   const GetAllincomeState = useSelector((state: RootState) => state.GetIncome);
+  //   const dispatch = useDispatch<AppDispatch>();
+  //   const GetAllincomeState = useSelector((state: RootState) => state.GetIncome);
   const currentDate = new Date();
-  
+
   // Get date 30 days ago
   const pastDate = new Date();
   pastDate.setDate(currentDate.getDate() - 30);
 
   // Format dates as needed (assuming yyyy-mm-dd format)
-  const formatDate = (date: Date) => {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-based
-    const day = String(date.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
-  };
+  // const formatDate = (date: Date) => {
+  //   const year = date.getFullYear();
+  //   const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+  //   const day = String(date.getDate()).padStart(2, '0');
+  //   return `${year}-${month}-${day}`;
+  // };
 
-  // Set initial state
-  const [startDate, setStartDate] = useState(formatDate(pastDate));
-  const [endDate, setEndDate] = useState(formatDate(currentDate));
-  console.log(setEndDate,setStartDate)
+  // // Set initial state
+  // const [startDate, setStartDate] = useState(formatDate(pastDate));
+  // const [endDate, setEndDate] = useState(formatDate(currentDate));
+  // console.log(setEndDate,setStartDate)
 
-//   useEffect(() => {
-//     if (startDate && endDate) {
-//       dispatch(GetAllIncomeReporFn({ startDate, endDate }));
-//     }
-//   }, [dispatch, startDate, endDate]);
+  //   useEffect(() => {
+  //     if (startDate && endDate) {
+  //       dispatch(GetAllIncomeReporFn({ startDate, endDate }));
+  //     }
+  //   }, [dispatch, startDate, endDate]);
 
-  
-//   const totalSales = GetAllincomeState.data?.salesInfo
-//     ? GetAllincomeState.data.salesInfo.reduce((acc, sale) => acc + parseFloat(sale.total_sales || "0"), 0)
-//     : 0;
+  //   const totalSales = GetAllincomeState.data?.salesInfo
+  //     ? GetAllincomeState.data.salesInfo.reduce((acc, sale) => acc + parseFloat(sale.total_sales || "0"), 0)
+  //     : 0;
 
-//   const totalSalesCost = GetAllincomeState.data?.salesInfo
-//     ? GetAllincomeState.data.salesInfo.reduce((acc, sale) => acc + parseFloat(sale.total_sales_cost || "0"), 0)
-//     : 0;
+  //   const totalSalesCost = GetAllincomeState.data?.salesInfo
+  //     ? GetAllincomeState.data.salesInfo.reduce((acc, sale) => acc + parseFloat(sale.total_sales_cost || "0"), 0)
+  //     : 0;
 
-//   const totalSalariesExpenses = GetAllincomeState.data?.salaryExpenses
-//     ? GetAllincomeState.data.salaryExpenses.reduce((acc, expense) => acc + parseFloat(expense.total_salaries_expenses || "0"), 0)
-//     : 0;
+  //   const totalSalariesExpenses = GetAllincomeState.data?.salaryExpenses
+  //     ? GetAllincomeState.data.salaryExpenses.reduce((acc, expense) => acc + parseFloat(expense.total_salaries_expenses || "0"), 0)
+  //     : 0;
 
-//   const totalOtherExpenses = GetAllincomeState.data?.otherExpenses
-//     ? GetAllincomeState.data.otherExpenses.reduce((acc, expense) => acc + parseFloat(expense.total_other_expenses || "0"), 0)
-//     : 0;
+  //   const totalOtherExpenses = GetAllincomeState.data?.otherExpenses
+  //     ? GetAllincomeState.data.otherExpenses.reduce((acc, expense) => acc + parseFloat(expense.total_other_expenses || "0"), 0)
+  //     : 0;
 
   // Calculate financial metrics
   // const netSale = totalSales - totalSalesCost;
@@ -71,7 +69,7 @@ function Reports() {
   // const isLoss = income <= 0;
 
   return (
-    <div className='min-h-screen'>
+    <div className="min-h-screen">
       <div className="p-3 flex items-center">
         <h1 className="lg:hidden">
           <SideParsm />
@@ -81,8 +79,8 @@ function Reports() {
         </div>
       </div>
 
-      <div className='w-[98%] overflow-hidden  m-auto'>
-        <h1 className='dark:text-white text-lg font-semibold'>Reports</h1>
+      <div className="w-[98%] overflow-hidden  m-auto">
+        <h1 className="dark:text-white text-lg font-semibold">Reports</h1>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -174,7 +172,7 @@ function Reports() {
                 <RiMoneyEuroCircleFill />
               </span>
             </div>
-            <h2 className='text-lg'>$Dollar</h2>
+            <h2 className="text-lg">$Dollar</h2>
             {/* <h1 className={`font-bold text-5xl ${isLoss ? 'text-red-600' : 'text-violet-600'}`}>{income}</h1> */}
             {/* <div className="bg-transparent w-[200px] h-[180px]">
               <Lottie animationData={Mastercard} loop={true} />

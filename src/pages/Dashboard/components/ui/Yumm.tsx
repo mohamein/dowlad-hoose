@@ -1,9 +1,9 @@
 import { AiOutlineProduct } from "react-icons/ai";
 import { FaSellsy } from "react-icons/fa";
-import { IoIosNotifications } from "react-icons/io";
+// import { IoIosNotifications } from "react-icons/io";
 import { IoPeopleSharp } from "react-icons/io5";
-import { MdAnalytics, MdCategory, MdOutlinePayment } from "react-icons/md";
-import { RiSecurePaymentLine } from "react-icons/ri";
+import { MdCategory } from "react-icons/md";
+// import { RiSecurePaymentLine } from "react-icons/ri";
 import { TbLayoutDashboardFilled, TbReportAnalytics } from "react-icons/tb";
 
 export const links = [

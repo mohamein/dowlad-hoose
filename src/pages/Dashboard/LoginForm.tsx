@@ -11,7 +11,7 @@ import FormFields from "./FormFields";
 // import { loginSchema } from "../lib/validations";
 import { Form } from "../../components/ui/form";
 import { Button } from "../../components/ui/button";
-import  { loginSchema } from "../../lib/validations";
+import { loginSchema } from "../../lib/validations";
 
 const LoginForm = () => {
   const [loading, setLoading] = useState(false);

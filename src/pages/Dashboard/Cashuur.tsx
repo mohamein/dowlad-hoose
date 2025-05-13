@@ -22,7 +22,7 @@ interface ReceiptData {
   amountInWords: string;
 }
 const ReceiptComponent = () => {
-  const [data, setData] = useState<ReceiptData[]>([]);
+  // const [data, setData] = useState<ReceiptData[]>([]);
   const fetchData = async () => {
     try {
       //   const response: any = await getArdiyad();
@@ -79,7 +79,7 @@ const ReceiptComponent = () => {
 
       <div className="w-full h-screen mt-4" ref={contentRef}>
         {/* <!-- Receipt Table Component Here --!> */}
-        <ReceiptTable data={data} />
+        <ReceiptTable />
       </div>
     </div>
   );
