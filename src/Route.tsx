@@ -9,6 +9,7 @@ import ReceiptComponent from "./pages/Dashboard/Cashuur";
 import AddReceiptPage from "./pages/Dashboard/AddReceiptPage";
 import DistrictsPage from "./pages/Dashboard/Degmooyin";
 import LoginScreen from "./pages/LoginScreen";
+import SearchPage from "./pages/Dashboard/SearchPage";
 
 function Route() {
   return (
@@ -61,6 +62,10 @@ export const router = createBrowserRouter([
       {
         path: "Dagmooyin",
         element: <DistrictsPage />,
+      },
+      {
+        path: "Baadhis",
+        element: <SearchPage />,
       },
       {
         path: "Dakhli",

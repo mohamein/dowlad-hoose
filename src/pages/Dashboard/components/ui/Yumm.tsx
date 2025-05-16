@@ -3,6 +3,7 @@ import { FaSellsy } from "react-icons/fa";
 // import { IoIosNotifications } from "react-icons/io";
 import { IoPeopleSharp } from "react-icons/io5";
 import { MdCategory } from "react-icons/md";
+import { FaSearch } from "react-icons/fa";
 // import { RiSecurePaymentLine } from "react-icons/ri";
 import { TbLayoutDashboardFilled, TbReportAnalytics } from "react-icons/tb";
 
@@ -31,6 +32,10 @@ export const links = [
         icon: <AiOutlineProduct size={25} />,
       },
 
+      {
+        name: "Baadhis",
+        icon: <FaSearch size={25} />,
+      },
       {
         name: "Cashuur",
         icon: <FaSellsy size={25} />,
